@@ -1,0 +1,61 @@
+10
+
+dir
+2542
+svn+ssh://mcgary@svn.newtoyapps.com/home/admin/repository/External/FreeImage/Wrapper/FreeImage.NET/cs/Samples
+svn+ssh://mcgary@svn.newtoyapps.com/home/admin/repository
+
+
+
+2009-11-11T16:02:40.488873Z
+1391
+vijaythakkar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3d2f1142-5f04-443c-be72-afbbd32ced20
+
+Sample 03 - Allocating
+dir
+
+Sample 11 - Using the FreeImageBitmap class
+dir
+
+Sample 10 - Metadata
+dir
+
+Sample 06 - Converting
+dir
+
+Sample 08 - Creating a plugin
+dir
+
+Sample 09 - Working with streams
+dir
+
+Sample 05 - Working with pixels
+dir
+
+Sample 01 - Loading and saving
+dir
+
+Sample 07 - ICC Profiles
+dir
+
+Sample 04 - Getting bitmap informations
+dir
+
+Sample 02 - Multipaged bitmaps
+dir
+

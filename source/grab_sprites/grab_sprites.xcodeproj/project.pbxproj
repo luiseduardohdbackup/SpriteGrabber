@@ -59,7 +59,7 @@
 		5A622C2D0FF6BA0D002157A6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
 		5A622C2E0FF6BA0D002157A6 /* process_ini.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = process_ini.cpp; path = source/process_ini.cpp; sourceTree = SOURCE_ROOT; };
 		5A622C2F0FF6BA0D002157A6 /* process_ini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = process_ini.h; path = source/process_ini.h; sourceTree = SOURCE_ROOT; };
-		5A622C540FF6C25C002157A6 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../../../External/FreeImage/libfreeimage.a; sourceTree = SOURCE_ROOT; };
+		5A622C540FF6C25C002157A6 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../../FreeImage/Dist/libfreeimage.a; sourceTree = SOURCE_ROOT; };
 		5A622CD10FF6D1E2002157A6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		5AADB7FC1039AF7B00D2E15D /* includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = includes.h; path = source/includes.h; sourceTree = SOURCE_ROOT; };
 		8DD76F6C0486A84900D96B5E /* grab_sprites */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = grab_sprites; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +181,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "grab_sprites" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* grab_sprites */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,12 +250,14 @@
 					"_GLIBCXX_DEBUG=1",
 					"_GLIBCXX_DEBUG_PEDANTIC=1",
 				);
+				HEADER_SEARCH_PATHS = "../../FreeImage/Dist/**";
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../External/FreeImage/Dist\"",
 				);
 				PRODUCT_NAME = grab_sprites;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -258,12 +267,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "../../FreeImage/Dist/**";
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../External/FreeImage/Dist\"",
 				);
 				PRODUCT_NAME = grab_sprites;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -279,11 +290,11 @@
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../../../External/FreeImage/Dist/**";
-				LIBRARY_SEARCH_PATHS = "../../../External/FreeImage/Dist/**";
-				ONLY_ACTIVE_ARCH = YES;
+				HEADER_SEARCH_PATHS = "../../FreeImage/Dist/**";
+				LIBRARY_SEARCH_PATHS = "../../FreeImage/Dist/**";
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -296,11 +307,11 @@
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../../../External/FreeImage/Dist/**";
-				LIBRARY_SEARCH_PATHS = "../../../External/FreeImage/Dist/**";
+				HEADER_SEARCH_PATHS = "../../FreeImage/Dist/**";
+				LIBRARY_SEARCH_PATHS = "../../FreeImage/Dist/**";
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
