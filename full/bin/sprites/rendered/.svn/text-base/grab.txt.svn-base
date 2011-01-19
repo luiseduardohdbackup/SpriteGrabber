@@ -1,0 +1,34 @@
+; in sequence mode, we can work with a sequence of bitmaps, as typically exported by 3D packages.
+; this makes Sprite Grabber perfect for working on games using 3d rendered animating sprites.
+
+; there must be an output section
+
+[OUTPUT]
+border		=	1
+shrink_wrap	=	1
+
+; the following sections are 'sprite_groups'
+
+[SPR_arch]
+infile		=	arch/arch_0000.tga
+frames		=	32
+
+[SPR_hydrant]
+infile		=	hydrant/render_0000.tga
+frames		=	64
+
+[SPR_pu_green]
+infile		=	pu_green/render_0000.tga
+frames		=	32
+
+[SPR_pu_purple]
+infile		=	pu_purple/render_0000.tga
+frames		=	32
+
+[SPR_pu_red]
+infile		=	pu_red/render_0000.tga
+frames		=	32
+
+[SPR_pu_yellow]
+infile		=	pu_yellow/render_0000.tga
+frames		=	32

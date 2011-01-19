@@ -1,0 +1,4 @@
+[TEXTURES]
+002 = bin/sprites/boxed/out.png
+001 = bin/sprites/font/out.png
+000 = bin/sprites/rendered/out.png

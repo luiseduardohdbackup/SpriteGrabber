@@ -1,0 +1,63 @@
+[OUTPUT] (master)
+texture_list
+sprite_table
+header_file
+
+
+
+
+[OUTPUT]				DEFAULT*	NOTES
+========				=======		=====
+outfile					REQUIRE		filename of output bitmap
+infile_shrink			1			set default value
+shrink_wrap				1			set default value
+
+border					0
+
+box_dir					0			set default value
+passive_mode			0			0 = active [box or seq mode] | 1 = passive [pas mode]
+
+
+
+
+BOX MODE				DEFAULT		NOTES
+========				=======		=====
+infile					REQUIRE		filename of input bitmap
+infile_aco				0			alpha cut off (remove all alpha at or below this value)
+infile_shrink			1*
+shrink_wrap				0*			0 = no | 1 = yes
+frames					1
+
+box_w					REQUIRE		box width
+box_h					'box_w'		box height
+box_x					0			box x start position
+box_y					0			box y start position
+box_dir					0*			0 = across | 1 = down
+
+
+SEQ MODE				DEFAULT		NOTES
+========				=======		=====
+infile					REQUIRE		filename of input bitmap
+infile_aco				0			alpha cut off (remove all alpha at or below this value)
+infile_shrink			1*
+shrink_wrap				1*			0 = no | 1 = yes
+frames					?			if not defined, get from filenames (file000.tga file001.tga)
+
+;angles					?			num of frames in 360 (just save in table)
+
+
+PAS MODE
+========
+
+
+
+
+
+
+* OUTPUT section can over-ride defaults
+
+
+
+
+
+

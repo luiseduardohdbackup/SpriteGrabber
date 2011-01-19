@@ -1,0 +1,22 @@
+; sprite grabber
+; www.jamiewoodhouse.co.uk
+; master header file
+
+[OUTPUT]
+header			=	bin/sprites/sprite_defines.h
+table			=	bin/sprites/sprite_table.bin
+list			=	bin/sprites/texture_list.ini
+uids			=	bin/sprites/sprite_uids.bin
+force			=	1
+halt_on_exit		=	1
+
+
+[TEXTURE_00]
+infile			=	bin/sprites/rendered/grab.txt
+
+[TEXTURE_01]
+infile			=	bin/sprites/font/grab.txt
+
+[TEXTURE_02]
+infile			=	bin/sprites/boxed/grab.txt
+

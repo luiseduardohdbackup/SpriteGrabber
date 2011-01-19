@@ -1,0 +1,46 @@
+; in box mode, we can have multiple sprite groups, from shared or different bitmaps,
+; all adding sprites to the same texture atlas
+;
+; use infile_argb_from and infile_argb_to to convert argb values on source bitmaps.
+
+[OUTPUT]
+border			=	1
+shrink_wrap		=	1
+
+[SPR_boxed]
+infile			=	boxed.psd
+box_w			=	64
+box_h			=	32
+box_dir			=	1
+frames			=	25
+
+[SPR_letters_big]
+infile			=	boxed_letters.psd
+box_w			=	32
+box_dir			=	1
+frames			=	26
+
+[SPR_letters_small]
+infile			=	boxed_letters.psd
+box_x			=	128
+box_y			=	0
+box_w			=	16
+box_dir			=	1
+frames			=	26
+
+[SPR_numbers_small]
+infile			=	boxed_letters.psd
+box_x			=	240
+box_y			=	96
+box_w			=	16
+box_dir			=	1
+frames			=	10
+
+[SPR_fruit]
+infile			=	fruit_with_border.png
+infile_argb_from	=	0xFFFF0000
+infile_argb_to		=	0x80000000
+infile_shrink		=	4
+box_w			=	32
+frames			=	8
+

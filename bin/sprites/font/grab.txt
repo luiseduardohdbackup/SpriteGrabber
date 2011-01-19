@@ -1,0 +1,27 @@
+; in box mode, we can re-use the same source bitmap and infile_shrink
+; at a different setting, to get a small and a big font
+
+[OUTPUT]
+border			=	1
+
+[SPR_font_small]
+infile			=	font.tga
+infile_aco		=	4
+infile_shrink		=	4
+box_w			=	16
+box_x			=	0
+box_y			=	32
+frames			=	96
+shrink_wrap		=	1
+
+[SPR_font_big]
+infile			=	font.tga
+infile_aco		=	4
+infile_shrink		=	2
+box_w			=	32
+box_x			=	0
+box_y			=	64
+frames			=	224
+shrink_wrap		=	1
+
+
